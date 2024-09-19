@@ -44,8 +44,8 @@ internal class Program
                 decimal driftBoostTick = decimal.TryParse(xe.GetAttribute("driftBoostTick"), out var tempdriftBoostTick) ? tempdriftBoostTick : 0M;
                 decimal chargeBoostBySpeed = decimal.TryParse(xe.GetAttribute("chargeBoostBySpeed"), out var tempchargeBoostBySpeed) ? tempchargeBoostBySpeed : 2M;
                 decimal SpeedSlotCapacity = decimal.TryParse(xe.GetAttribute("SpeedSlotCapacity"), out var tempSpeedSlotCapacity) ? tempSpeedSlotCapacity : 2M;
-                decimal ItemSlotCapacity = decimal.TryParse(xe.GetAttribute("ItemSlotCapacity"), out var tempItemSlotCapacity) ? tempItemSlotCapacity : 1M;
-                decimal SpecialSlotCapacity = decimal.TryParse(xe.GetAttribute("SpecialSlotCapacity"), out var tempSpecialSlotCapacity) ? tempSpecialSlotCapacity : 0M;
+                decimal ItemSlotCapacity = decimal.TryParse(xe.GetAttribute("ItemSlotCapacity"), out var tempItemSlotCapacity) ? tempItemSlotCapacity : 2M;
+                decimal SpecialSlotCapacity = decimal.TryParse(xe.GetAttribute("SpecialSlotCapacity"), out var tempSpecialSlotCapacity) ? tempSpecialSlotCapacity : 1M;
                 int UseTransformBooster = (bool.TryParse(xe.GetAttribute("UseTransformBooster"), out var tempUseTransformBooster) ? tempUseTransformBooster : false)? 1 : 0;
                 int motorcycleType = (bool.TryParse(xe.GetAttribute("motorcycleType"), out var tempmotorcycleType) ? tempmotorcycleType : false)? 1 : 0;
                 int BikeRearWheel = (bool.TryParse(xe.GetAttribute("BikeRearWheel"), out var tempBikeRearWheel) ? tempBikeRearWheel : true)? 1 : 0;
